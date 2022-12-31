@@ -11,24 +11,83 @@
       <div class="row min-vh-100 g-0">
         <!-- Start Side Menu -->
         <div class="col-12 col-lg-2">
-          <div id="sidebar" class="min-vh-100 bg-primary">
-            h
-            <ul class="list-group">
-              <li class="list-group-item">
-                <a href="#" class="sidebar-link">Home</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#" class="sidebar-link">Home</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#" class="sidebar-link">Home</a>
-              </li>
-              <li class="list-group-item">
-                <a href="#" class="sidebar-link">Home</a>
-              </li><li class="list-group-item">
-                <a href="#" class="sidebar-link">Home</a>
-              </li>
-            </ul>
+          <div id="sidebar" class="vh-100 overflow-scroll bg-dark">
+
+            <div class=" py-2 text-center sticky-top bg-dark">
+              <a href="#"><img src="./public/logo/logo.svg" height="50" alt=""></a>
+            </div>
+
+            <!-- Start MenuList -->
+            <div class="p-3">
+              <ul>
+                <li><h4 class="text-white">Group 1</h4></li>
+                <li>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link active">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li><li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-spacer"></li>
+
+                <li><h4 class="text-white">Group 2</h4></li>
+                <li>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li><li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="sidebar-spacer"></li>
+
+                <li><h4 class="text-white">Group 3</h4></li>
+                <li>
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li><li class="list-group-item">
+                      <a href="#" class="sidebar-link">Home</a>
+                    </li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+            <!-- End MenuList -->
+
           </div>
         </div>
         <!-- End Side Menu -->
@@ -36,9 +95,9 @@
         <!-- Start Page View -->
         <div class="col-12 col-lg-10">
 
-          <div class="min-vh-100 d-flex flex-column justify-content-start bg-light">
+          <div class="vh-100 overflow-scroll d-flex flex-column justify-content-start bg-light">
             <!-- Start Nav  -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,12 +132,100 @@
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
               </div>
+            </nav> -->
+            
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <button class="btn btn-primary" id="showSidebar">
+                  <i class="bi bi-menu-app"></i>
+                </button>
+<!--                <a class="navbar-brand" href="#">Navbar</a>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
             </nav>
             <!-- End Nav -->
             <!-- Start Main Body  -->
-            <div class="">
-              <h1>main body</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+            <div class="p-3">
+              <div class="row">
+                <div class="col-12">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="bg-success">
+                    <h1>main body</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptates ipsa iste nihil cumque tenetur cum quo, fugit exercitationem doloribus aperiam harum molestiae modi deleniti obcaecati dolorem magni necessitatibus inventore.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           <!-- End Main Body -->
 

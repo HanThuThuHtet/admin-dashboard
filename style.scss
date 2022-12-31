@@ -1,1 +1,43 @@
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+//custom css
+#sidebar{
+    ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .sidebar-spacer{
+        height: 2rem;
+    }
+
+    .sidebar-link{
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 0.5rem;
+        transition: 0.5s;
+    }
+
+    .sidebar-link:hover,.sidebar-link:active{
+        background: black;   
+        color: white;
+    }
+
+}
+
+@include media-breakpoint-down(lg){
+    #sidebar{
+        width: 300px;
+        position: fixed;
+        transition: 0.5s;
+        transform: translateX(-300px);
+        &.show{
+            transform: translateX(0px);
+        }
+    }
+
+}
